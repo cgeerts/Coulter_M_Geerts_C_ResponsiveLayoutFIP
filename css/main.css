@@ -53,6 +53,18 @@ button {
   font-size: 20px;
 }
 
+#navbuttons {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  color: #2C2C2C;
+  border-color: #F6CF6E;
+  font-family: "Century Gothic", Century Gothic, sans-serif;
+  font-weight: bold;
+  background-color: #F7D47D;
+  font-size: 50px;
+}
+
 /*a:link is for not visited(standard unclicked link), 
 a:visited is for visited, and just a applies to both.*/
 /*a will also style anchor links*/
@@ -245,7 +257,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
   	justify-content: flex-start;
 }
 
-#productImages 
+.productImages 
 {
 	display: flex;
 	flex-direction: row;
@@ -256,7 +268,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	padding-bottom: 20px;
 }
 
-#productImages p
+.productImages p
 {
 	line-height: 250px;
 }
@@ -346,4 +358,52 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+@media screen and (max-width: 801px) {
+
+#siteContainer {
+	max-width: 800px;
+	margin-left: 20%;
+}
+
+#footerNav 
+{
+	width: 800px;
+	align-self: flex-end;
+}
+
+body{
+	font-size: 36px;
+}
+
+a {
+	font-size: 36px;
+}
+
+img {
+	max-width: 800px;
+	align-self: center;
+}
+
+#promoImage 
+{
+	max-width: 600px;
+	max-height: 300px;
+	border-style: solid;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+}
+
+.productImages 
+{
+	max-width: 600px;
+	max-height: 300px;
+	padding-left: 30px;
+
+}
+
+
 }
